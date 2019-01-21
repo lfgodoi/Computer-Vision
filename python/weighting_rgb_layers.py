@@ -36,8 +36,8 @@ img_2_gs = cv.cvtColor(img_2, cv.COLOR_BGR2GRAY)    # Grayscale
 
 # Weighting every layer and generating grayscale version of the image 3 
 img_3[:, :, 2] = img_3[:, :, 2] * 0.55              # R weighting     
-img_3[:, :, 1] = img_3[:, :, 1] * 0.3               # R weighting 
-img_3[:, :, 0] = img_3[:, :, 0] * 0.15              # R weighting 
+img_3[:, :, 1] = img_3[:, :, 1] * 0.3               # G weighting 
+img_3[:, :, 0] = img_3[:, :, 0] * 0.15              # B weighting 
 img_3_gs = cv.cvtColor(img_3, cv.COLOR_BGR2GRAY)    # Grayscale
  
 # Saving resulting images 
