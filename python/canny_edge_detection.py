@@ -1,12 +1,23 @@
-#
-# Canny Edge Detection
-#
-# Use of the Canny algorithm for edge detection in an image.
-#
-# Leonardo Franco de Godói
-#
- 
-#------------------------------------------------------------------------------
+'''
+
+TITLE: 
+   Canny Edge Detection
+
+DESCRIPTION:
+   Use of the Canny algorithm for edge detection in an image.
+   
+VERSION: 
+   Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   Creation date: 11-September-2018
+
+REVISION HISTORY:
+   V1.0 | 11-September-2018 | Leonardo Godói | Creation
+
+'''
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------
 
 # Importing package for computer vision with Python
 import cv2 as cv           
@@ -31,3 +42,6 @@ img_bl_ed = np.hstack((img_bl,img_bl_ed))
 cv.imwrite('C:/Users/leonardo/Desktop/Proc/img_or_ed.jpg', img_or_ed) 
 cv.imwrite('C:/Users/leonardo/Desktop/Proc/img_bl_ed.jpg', img_bl_ed  
 
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------

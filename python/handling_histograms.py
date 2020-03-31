@@ -1,12 +1,24 @@
-#
-# Handling Histograms (Simple and Cumulative)
-#
-# Use of the main OpenCV histogram features, emphasizing the possibility of generating the simple and accumulated graphs,
-#
-# Leonardo Franco de Godói
-#
- 
-#------------------------------------------------------------------------------
+'''
+
+TITLE: 
+   Handling Image Histograms (Simple and Cumulative)
+
+DESCRIPTION:
+   Use of the main OpenCV histogram features, emphasizing the 
+   possibility of generating the simple and accumulated graphs
+   
+VERSION: 
+   Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   Creation date: 14-September-2018
+
+REVISION HISTORY:
+   V1.0 | 14-September-2018 | Leonardo Godói | Creation
+
+'''
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------
 
 # Importing package for computer vision with Python
 import cv2 as cv           
@@ -43,3 +55,7 @@ plt.show()
 # Saving original and equalized images side by side for comparison
 img_or_eq = np.hstack((img_or, img_eq)) 
 cv.imwrite('C:/Users/leonardo/Desktop/img_or_eq', img_or_eq 
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------

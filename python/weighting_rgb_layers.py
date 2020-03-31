@@ -1,12 +1,24 @@
-#
-# Weighting RGB Layers
-#
-# Setting different proportions for the RGB layers (red, green and blue) of an image.
-#
-# Leonardo Franco de Godói
-#
- 
-#------------------------------------------------------------------------------
+'''
+
+TITLE: 
+   Weighting and Splitting RGB Layers
+
+DESCRIPTION:
+   Setting different proportions for the RGB layers (red, green 
+   and blue) of an image and splitting it up.
+   
+VERSION: 
+   Author: Leonardo Godói (eng.leonardogodoi@gmail.com)
+   Creation date: 15-September-2018
+
+REVISION HISTORY:
+   V1.0 | 15-September-2018 | Leonardo Godói | Creation
+
+'''
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------
 
 # Importing package for computer vision with Python
 import cv2 as cv           
@@ -47,3 +59,7 @@ cv.imwrite('C:/Users/leonardo/Desktop/img_2.jpg', img_2)
 cv.imwrite('C:/Users/leonardo/Desktop/img_2_gs.jpg', img_2_gs) 
 cv.imwrite('C:/Users/leonardo/Desktop/img_3.jpg', img_3) 
 cv.imwrite('C:/Users/leonardo/Desktop/img_3_gs.jpg', img_3_gs)
+
+# -------------------------------------------------------------
+# -------------------------------------------------------------
+# -------------------------------------------------------------
