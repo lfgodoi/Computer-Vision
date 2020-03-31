@@ -30,31 +30,31 @@ import numpy as np
 from matplotlib import pyplot as plt   
 
 # Importing the image in grayscale to be processed and resizing it 
-img = cv.imread('C:/Users/leonardo/Desktop/img.jpg', 0) 
-img_or = cv.resize(img, (0, 0), fx=0.5, fy=0.5) 
+img = cv.imread('imgs/messi.jpg', 0) 
+img_original = cv.resize(img, (0, 0), fx=0.5, fy=0.5) 
  
 # Applying equalization in the histogram
-img_eq = cv.equalizeHist(img_or)
+img_equalized = cv.equalizeHist(img_original)
 
-#Plotting before and after graphics of histogram
-plt.hist(img_or.ravel(),256,[0,256], color='red', label='Original') 
+# Plotting before and after graphics of histogram
+plt.hist(img_original.ravel(),256,[0,256], color='red', label='Original') 
 plt.legend() 
 plt.show() 
-plt.hist(img_eq.ravel(),256,[0,256], color='green', label='equalizada')  
+plt.hist(img_equalized.ravel(),256,[0,256], color='green', label='equalizada')  
 plt.legend() 
 plt.show() 
  
 # Plotting before and after graphics of cumulative histogram 
-plt.hist(img_or.ravel(),256,[0,256], color='red', label='Original', cumulative=True) 
+plt.hist(img_original.ravel(),256,[0,256], color='red', label='Original', cumulative=True) 
 plt.legend() 
 plt.show() 
-plt.hist(img_eq.ravel(),256,[0,256], color='green', label='equalizada', cumulative=True)  
+plt.hist(img_equalized.ravel(),256,[0,256], color='green', label='equalizada', cumulative=True)  
 plt.legend() 
 plt.show() 
  
 # Saving original and equalized images side by side for comparison
-img_or_eq = np.hstack((img_or, img_eq)) 
-cv.imwrite('C:/Users/leonardo/Desktop/img_or_eq', img_or_eq 
+img_original_equalized = np.hstack((img_original, img_equalized)) 
+cv.imwrite('imgs/messi_original_equalized.jpg', img_original_equalized) 
 
 # -------------------------------------------------------------
 # -------------------------------------------------------------
