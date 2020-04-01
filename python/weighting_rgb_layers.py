@@ -47,9 +47,9 @@ img_3[:, :, 1] = img_3[:, :, 1] * 0.3               # G weighting
 img_3[:, :, 0] = img_3[:, :, 0] * 0.15              # B weighting 
  
 # Saving resulting images 
-cv.imwrite('imgs/img_1.jpg', img_1)
-cv.imwrite('imgs/img_2.jpg', img_2)
-cv.imwrite('imgs/img_3.jpg', img_3) 
+cv.imwrite('imgs/messi_1.jpg', img_1)
+cv.imwrite('imgs/messi_2.jpg', img_2)
+cv.imwrite('imgs/messi_3.jpg', img_3) 
 
 # -------------------------------------------------------------
 # -------------------------------------------------------------
